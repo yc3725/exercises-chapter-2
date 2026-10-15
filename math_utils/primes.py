@@ -1,0 +1,7 @@
+def isprime(p):
+    if p < 2:
+        return False
+    for i in range(2, int(p**0.5) + 1):
+        if p % i == 0:
+            return False
+    return True
