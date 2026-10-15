@@ -1,7 +1,10 @@
     name: GitHub Classroom Workflow
 
     on: [push]
-
+    permissions:
+      contents: read
+      checks: write
+      actions: read
     jobs:
       build:
         name: Autograding
